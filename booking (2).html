@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-weight: bold;">Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+h2, h3 {
+    color: #002147; /* Navy blue */
+}
+
+p, label {
+    color: #495057;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.btn-primary {
+    background-color: #002147; /* Navy blue */
+    border-color: #002147;
+    color: #ffffff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #001d3d;
+    border-color: #001d3d;
+}
+
+.btn-success {
+    background-color: #ffcc00; /* Gold */
+    border-color: #ffcc00;
+    color: #002147; /* Navy blue */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #e6b800;
+    border-color: #e6b800;
+}
+
+.container {
+    padding: 20px;
+    background-color: #bdcad8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h2>Book Your Stay</h2>
+        <p>Find the perfect room for your upcoming stay.</p>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="checkInDate">Check-in Date:</label>
+                <input type="date" class="form-control" id="checkInDate" name="checkInDate" required>
+            </div>
+            <div class="form-group">
+                <label for="checkOutDate">Check-out Date:</label>
+                <input type="date" class="form-control" id="checkOutDate" name="checkOutDate" required>
+            </div>
+            <div class="form-group">
+                <label for="roomType">Room Type:</label>
+                <select class="form-control" id="roomType" name="roomType" required>
+                    <option value="Deluxe Room">Deluxe Room</option>
+                    <option value="Suite">Suite</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <input type="number" class="form-control" id="guests" name="guests" min="1" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Check Availability</button>
+        </form>
+
+        <!-- Placeholder for displaying availability and booking details -->
+        <div id="bookingDetails"></div>
+    </div>
+
+    <script>
+        // Function to handle form submission and display booking details
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Retrieve form data
+            const checkInDate = document.getElementById("checkInDate").value;
+            const checkOutDate = document.getElementById("checkOutDate").value;
+            const roomType = document.getElementById("roomType").value;
+            const guests = document.getElementById("guests").value;
+
+            // Display booking details
+            const bookingDetailsElement = document.getElementById("bookingDetails");
+            bookingDetailsElement.innerHTML = `
+                <h3>Booking Details</h3>
+                <p>Check-in Date: ${checkInDate}</p>
+                <p>Check-out Date: ${checkOutDate}</p>
+                <p>Room Type: ${roomType}</p>
+                <p>Number of Guests: ${guests}</p>
+                <button class="btn btn-success" onclick="document.location='payment.html'">Book Now</button>
+            `;
+        });
+    </script>
+</body>
+</html>

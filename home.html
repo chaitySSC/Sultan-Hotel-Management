@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom theme style */
+        body {
+            background-image: url("https://images.wallpaperscraft.com/image/single/ocean_bird_shore_280137_3840x2160.jpg");
+            color: #000000; /* Dark gray text */
+            background-size: cover;
+           
+        }
+
+
+        div.scroll-container {
+            background-color: transparent !important;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 0px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: transparent !important; 
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fdfafa; /* White navbar links */
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #aaaaaa; /* Light gray hover color */
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #fff; /* White navbar toggler icon */
+        }
+
+        /* Header */
+       /* header {
+            background-color: #a3fdab;  
+            color: #0f0f0f; 
+            padding: 15px 0;
+        }*/
+
+        /* Welcome section */
+        .container h1,
+        .container h2,
+        .container p {
+            font-family: 'Pacifico';
+            color: #f5f5ff; /* Dark gray text */
+        }
+
+        /* Special Offers section */
+        .card{
+            background-color:  #b1c8ef; 
+        }
+
+        /* Reviews section */
+        .Review {
+            background-color: transparent !important;/* Light gray background */
+            padding: 20px 0;
+        }
+
+        .Review .card {
+            background-color: #b1c8ef; /* White card background */
+        }
+        .row {
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img style="width: 50px;height: 30px;border-radius: 50%;" src="https://thumbs.dreamstime.com/b/environment-friendly-home-eco-green-house-logo-vector-icon-design-environment-friendly-home-eco-green-house-logo-vector-icon-158039787.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="room.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="specialoffer.html">special offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="roomavailable.html">Room Available!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="location.html">Location</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1>Welcome to Our Hotel!</h1>
+        <p>Experience luxury and comfort at our hotel. We offer a wide range of amenities and services to make your stay memorable.</p>
+        <div class="scroll-container">
+            <img style="border-radius: 10px;" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/514085128.jpg?k=a49f62db7716d411357b99bc65f0359e055ab29c767eaa97c2e395d746258230&o=&hp=1" alt="Delux room" width="600" height="400">
+            <img style="border-radius: 10px;" src="https://cache.marriott.com/content/dam/marriott-renditions/DACSI/dacsi-king-premier-guestroom-3248-hor-pano.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1600px:*" alt="Lights" width="600" height="400">
+            <img style="border-radius: 10px;" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/514079936.jpg?k=8c32625ae47d48c114634af9e3b9727bff0b93fd5c918f70a815ecac64aab548&o=&hp=1" alt="Forest" width="600" height="400">
+            <img style="border-radius: 10px;" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/514079513.jpg?k=8117f78e3a8efd502d49b43dd64f4b0264692ec2d4c52c5a31c71967ea171e60&o=&hp=1" alt="show" width="600" height="400">
+          </div>
+          <h1 style="padding-top: 30px;color: rgb(254, 254, 254);font-weight: bold;">Explore our World you will love it.</h1>
+
+        <img style="border-radius: 10px;" src="https://cache.marriott.com/content/dam/marriott-renditions/DACSI/dacsi-king-premier-guestroom-3248-hor-pano.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1600px:*"width=100% alt="">
+        <h3 style = "color: #ffffff;">Special Offers & Packages</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Weekend Getaway Package</h5>
+                        <p style = "color: #000000;" class="card-text">Escape to our hotel for the weekend and enjoy special discounts.</p>
+                        <a href="specialoffer.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Honeymoon Package</h5>
+                        <p style = "color: #000000;"class="card-text">Celebrate your love in luxury with our romantic honeymoon package.</p>
+                        <a href="specialoffer.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Review">
+        <h2 style = "color: #ffffff;">Reviews & Ratings</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mridul</h5>
+                        <p class="card-text">"Had a wonderful stay at this hotel. The staff was friendly and the rooms were clean and comfortable."</p>
+                        <p class="card-text">Rating: <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ashraf</h5>
+                        <p class="card-text">"Fantastic experience! The hotel amenities were top-notch and the location was perfect."</p>
+                        <p class="card-text">Rating: <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

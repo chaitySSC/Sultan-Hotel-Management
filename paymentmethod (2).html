@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    /* Custom CSS for theme and colors */
+    body {
+        background-color: #f8f9fa; /* Light grey */
+        color: #343a40; /* Dark grey */
+        font-family: 'Arial', sans-serif;
+    }
+
+    h3 {
+        color: #002147; /* Navy blue */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        border: 1px solid #002147; /* Navy blue */
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        color: #002147; /* Navy blue */
+    }
+
+    .card-text {
+        color: #495057; /* Grey */
+    }
+
+    .btn-primary {
+        background-color: #002147; /* Navy blue */
+        border-color: #002147;
+        color: #ffffff; /* White */
+    }
+
+    .btn-primary:hover {
+        background-color: #001d3d; /* Darker navy blue */
+        border-color: #001d3d;
+    }
+</style>
+<body>
+    <!-- Payment options -->
+    <h3>Payment Methods</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Credit Card</h5>
+                    <p class="card-text">Pay securely with your credit card.</p>
+                    <button class="btn btn-primary" onclick = alert9("successful")>Pay Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Bkash</h5>
+                    <p class="card-text">Conveniently pay with your PayPal account.</p>
+                    <button class="btn btn-primary" onclick = alert ("successful")>Pay Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

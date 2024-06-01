@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* styles.css */
+
+/* General styling */
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: 'Arial', sans-serif;
+}
+
+h2, h5 {
+    color: #002147; /* Navy blue */
+}
+
+p, .card-text {
+    color: #feffff;
+}
+
+.card {
+    background-color: #2a67ad;
+    border: 1px solid #002147; /* Navy blue */
+    border-radius: 8px;
+}
+
+.card-title {
+    color: #002147; /* Navy blue */
+}
+
+.btn-primary {
+    background-color: #e4bc08; /* Navy blue */
+    border-color: #39567c;
+    color: #001d3d;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #001d3d;
+    border-color: #001d3d;
+}
+
+.container {
+    padding: 20px;
+    background-color: #c2cdda;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h2>Payment Options</h2>
+        <p style = "color: #090909;">Choose your preferred payment method and complete your booking.</p>
+
+        <!-- Room prices -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 style = "color: #ffffff;" class="card-title">Deluxe Room</h5>
+                        <p class="card-text">Price: 10000 TK per night</p>
+                        <button class="btn btn-primary" onclick="document.location='paymentmethod.html'">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 style = "color: #ffffff;"class="card-title">Suite</h5>
+                        <p class="card-text">Price: 20000 TK per night</p>
+                        <button class="btn btn-primary" onclick="document.location='paymentmethod.html'">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
